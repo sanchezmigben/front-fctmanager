@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './dashboard.css'
 import Card from './Card'
 
-interface Card {
+interface ICard {
   _id: number
   name: string
   icon: string
@@ -12,7 +12,7 @@ interface Card {
 }
 
 function Dashboard() {
-  const [cards, setCards] = useState<Card[]>([])
+  const [cards, setCards] = useState<ICard[]>([])
 
   const fetchData = async () => {
     try {
@@ -35,7 +35,7 @@ function Dashboard() {
           <div className='row'>
             {cards &&
               cards.length > 0 &&
-              cards.map((card: Card) => <Card key={card._id} {...card} />)}
+              cards.map((card: ICard) => <Card key={card._id} {...card} />)}
           </div>
         </div>
         <div className='col-lg-4'></div>
