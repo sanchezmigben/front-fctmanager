@@ -38,7 +38,6 @@ function Card({ _id, name, icon, amount, percentage, active }: Card) {
                   ? '$' + amount.toLocaleString()
                   : amount.toLocaleString()}
               </h6>
-
               <span
                 className={`
                 ${
@@ -46,7 +45,7 @@ function Card({ _id, name, icon, amount, percentage, active }: Card) {
                 } small pt-1 fw-bold
                 `}
               >
-                {percentage > 0 ? percentage * 100 : -percentage * 100}
+                {percentage > 0 ? percentage * 100 : -percentage * 100}%
               </span>
               <span className='text-muted small pt-2 ps-1'>
                 {percentage > 0 ? 'increase' : 'decrease'}

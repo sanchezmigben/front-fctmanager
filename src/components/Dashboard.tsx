@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './dashboard.css'
 import Card from './Card'
+import Reports from './Reports'
 
 interface ICard {
   _id: number
@@ -36,6 +37,9 @@ function Dashboard() {
             {cards &&
               cards.length > 0 &&
               cards.map((card: ICard) => <Card key={card._id} {...card} />)}
+            <div className='col-12'>
+              <Reports />
+            </div>
           </div>
         </div>
         <div className='col-lg-4'></div>
