@@ -4,6 +4,7 @@ import Card from './Card'
 import Reports from './Reports'
 import RecentSales from './RecentSales'
 import TopSelling from './TopSelling'
+import RecentActivity from './RecentActivity'
 
 interface ICard {
   _id: number
@@ -53,7 +54,9 @@ function Dashboard() {
             </div>
           </div>
         </div>
-        <div className='col-lg-4'></div>
+        <div className='col-lg-4'>
+          <RecentActivity />
+        </div>
       </div>
     </section>
   )
