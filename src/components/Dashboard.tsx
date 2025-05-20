@@ -1,46 +1,20 @@
-import { useEffect, useState } from 'react'
 import './dashboard.css'
-import Card from './Card'
 import Reports from './Reports'
 import RecentSales from './RecentSales'
 import TopSelling from './TopSelling'
 import RecentActivity from './RecentActivity'
 import BudgetReport from './BudgetReport'
-
-interface ICard {
-  _id: number
-  name: string
-  icon: string
-  amount: number
-  percentage: number
-  active: boolean
-}
+import WebTraffic from './WebTraffic'
+import News from './News'
+import Cards from './Cards'
 
 function Dashboard() {
-  const [cards, setCards] = useState<ICard[]>([])
-
-  const fetchData = async () => {
-    try {
-      const res = await fetch('http://localhost:3000/cards')
-      const data = await res.json()
-      setCards(data)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
-
   return (
     <section className='dashboard section'>
       <div className='row'>
         <div className='col-lg-8'>
           <div className='row'>
-            {cards &&
-              cards.length > 0 &&
-              cards.map((card: ICard) => <Card key={card._id} {...card} />)}
+            <Cards />
 
             <div className='col-12'>
               <Reports />
@@ -59,6 +33,10 @@ function Dashboard() {
           <RecentActivity />
 
           <BudgetReport />
+
+          <WebTraffic />
+
+          <News />
         </div>
       </div>
     </section>
