@@ -3,6 +3,7 @@ import './dashboard.css'
 import Card from './Card'
 import Reports from './Reports'
 import RecentSales from './RecentSales'
+import TopSelling from './TopSelling'
 
 interface ICard {
   _id: number
@@ -45,6 +46,10 @@ function Dashboard() {
 
             <div className='col-12'>
               <RecentSales />
+            </div>
+
+            <div className='col-12'>
+              <TopSelling />
             </div>
           </div>
         </div>
