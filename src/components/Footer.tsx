@@ -11,6 +11,7 @@ function Footer() {
         . All Rights Reserved
       </div>
 
+      {/* Créditos adicionales a DStudio */}
       <div className='credits'>
         Designed by{' '}
         <a
