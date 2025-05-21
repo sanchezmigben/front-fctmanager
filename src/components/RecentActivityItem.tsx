@@ -4,7 +4,6 @@ interface IRecentActivityItem {
   color: string
   content: string
   highlight: string
-  id: string
 }
 
 function RecentActivityItem({
@@ -12,8 +11,7 @@ function RecentActivityItem({
   time,
   color,
   content,
-  highlight,
-  id
+  highlight
 }: IRecentActivityItem) {
   return (
     <div className='activity-item d-flex'>

@@ -4,17 +4,9 @@ interface ITopSellingItem {
   name: string
   price: number
   sold: number
-  id: string
 }
 
-function TopSellingItem({
-  _id,
-  preview,
-  name,
-  price,
-  sold,
-  id
-}: ITopSellingItem) {
+function TopSellingItem({ _id, preview, name, price, sold }: ITopSellingItem) {
   return (
     <tr>
       <th scope='row'>

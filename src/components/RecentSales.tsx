@@ -1,28 +1,28 @@
 import { useEffect, useState } from 'react'
 import CardFilter from './CardFilter'
-import './recentSales.css'
 import RecentSalesTable from './RecentSalesTable'
+import recentSalesData from '../api/recentSales.json'
+import './recentSales.css'
+
+interface IRecentSalesItem {
+  _id: number
+  number: string
+  customer: string
+  product: string
+  price: number
+  status: string
+}
 
 function RecentSales() {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState<IRecentSalesItem[]>([])
   const [filter, setFilter] = useState('Today')
 
   const handleFilterChange = (filter: string) => {
     setFilter(filter)
   }
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch('http://localhost:3000/recent-sales')
-      const data = await res.json()
-      setItems(data)
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
   useEffect(() => {
-    fetchData()
+    setItems(recentSalesData)
   }, [])
 
   return (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Card from './Card'
+import cardsData from '../api/cards.json'
 
 interface ICard {
   _id: number
@@ -13,18 +14,8 @@ interface ICard {
 function Cards() {
   const [cards, setCards] = useState<ICard[]>([])
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch('http://localhost:3000/cards')
-      const data = await res.json()
-      setCards(data)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
   useEffect(() => {
-    fetchData()
+    setCards(cardsData)
   }, [])
 
   return (

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import './topSelling.css'
 import CardFilter from './CardFilter'
 import TopSellingItem from './TopSellingItem'
+import topSellingsData from '../api/topSellings.json'
+import './topSelling.css'
 
 interface ITopSellingItem {
   _id: number
@@ -9,29 +10,18 @@ interface ITopSellingItem {
   name: string
   price: number
   sold: number
-  id: string
 }
 
 function TopSelling() {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState<ITopSellingItem[]>([])
   const [filter, setFilter] = useState('Today')
 
   const handleFilterChange = (filter: string) => {
     setFilter(filter)
   }
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch('http://localhost:3000/top-sellings')
-      const data = await res.json()
-      setItems(data)
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
   useEffect(() => {
-    fetchData()
+    setItems(topSellingsData)
   }, [])
 
   return (

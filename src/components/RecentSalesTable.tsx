@@ -5,7 +5,6 @@ interface RecentSalesItem {
   product: string
   price: number
   status: string
-  id: string
 }
 
 interface RecentSalesTableProps {

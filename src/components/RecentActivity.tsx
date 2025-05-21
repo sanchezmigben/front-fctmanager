@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import CardFilter from './CardFilter'
 import RecentActivityItem from './RecentActivityItem'
+import recentActivitiesData from '../api/recentActivities.json'
 import './recentActivity.css'
 
 interface IRecentActivityItem {
@@ -9,29 +10,18 @@ interface IRecentActivityItem {
   color: string
   content: string
   highlight: string
-  id: string
 }
 
 function RecentActivity() {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState<IRecentActivityItem[]>([])
   const [filter, setFilter] = useState('Today')
 
   const handleFilterChange = (filter: string) => {
     setFilter(filter)
   }
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch('http://localhost:3000/recent-activities')
-      const data = await res.json()
-      setItems(data)
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
   useEffect(() => {
-    fetchData()
+    setItems(recentActivitiesData)
   }, [])
 
   return (

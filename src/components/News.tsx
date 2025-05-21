@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import './news.css'
 import CardFilter from './CardFilter'
 import NewsPostItem from './NewsPostItem'
+import newsData from '../api/news.json'
+import './news.css'
 
 interface INews {
   _id: number
@@ -9,29 +10,18 @@ interface INews {
   title: string
   subtitle: string
   category: string
-  id: string
 }
 
 function News() {
-  const [news, setNews] = useState([])
+  const [news, setNews] = useState<INews[]>([])
   const [filter, setFilter] = useState('Today')
 
   const handleFilterChange = (filter: string) => {
     setFilter(filter)
   }
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch('http://localhost:3000/news')
-      const data = await res.json()
-      setNews(data)
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
   useEffect(() => {
-    fetchData()
+    setNews(newsData)
   }, [])
 
   return (
