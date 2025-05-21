@@ -13,7 +13,7 @@ function RecentSales() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('http://localhost:3000/recentsales')
+      const res = await fetch('http://localhost:3000/recent-sales')
       const data = await res.json()
       setItems(data)
     } catch (err) {

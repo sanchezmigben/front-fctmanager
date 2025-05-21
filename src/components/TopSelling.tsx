@@ -22,7 +22,7 @@ function TopSelling() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('http://localhost:3000/topselling')
+      const res = await fetch('http://localhost:3000/top-sellings')
       const data = await res.json()
       setItems(data)
     } catch (err) {

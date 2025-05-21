@@ -22,7 +22,7 @@ function RecentActivity() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('http://localhost:3000/recentactiviy')
+      const res = await fetch('http://localhost:3000/recent-activities')
       const data = await res.json()
       setItems(data)
     } catch (err) {
