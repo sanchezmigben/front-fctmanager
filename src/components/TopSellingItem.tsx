@@ -6,7 +6,7 @@ interface ITopSellingItem {
   sold: number
 }
 
-function TopSellingItem({ _id, preview, name, price, sold }: ITopSellingItem) {
+function TopSellingItem({ preview, name, price, sold }: ITopSellingItem) {
   return (
     <tr>
       <th scope='row'>

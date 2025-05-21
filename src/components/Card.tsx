@@ -11,7 +11,7 @@ interface Card {
   active: boolean
 }
 
-function Card({ _id, name, icon, amount, percentage, active }: Card) {
+function Card({ name, icon, amount, percentage }: Card) {
   const [filter, setFilter] = useState('Today')
 
   const handleFilterChange = (filter: string) => {

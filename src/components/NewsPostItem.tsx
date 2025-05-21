@@ -6,7 +6,7 @@ interface INews {
   category: string
 }
 
-function NewsPostItem({ _id, img, title, subtitle, category }: INews) {
+function NewsPostItem({ img, title, subtitle }: INews) {
   return (
     <div className='post-item clearfix'>
       <img src={img} alt='' />

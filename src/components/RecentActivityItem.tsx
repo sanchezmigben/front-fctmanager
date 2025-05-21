@@ -7,7 +7,6 @@ interface IRecentActivityItem {
 }
 
 function RecentActivityItem({
-  _id,
   time,
   color,
   content,

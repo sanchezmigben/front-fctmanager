@@ -3,7 +3,7 @@ import Chart from 'react-apexcharts'
 import type { ApexOptions } from 'apexcharts'
 
 function ReportCharts() {
-  const [data, setData] = useState<{
+  const [data] = useState<{
     series: ApexAxisChartSeries | ApexNonAxisChartSeries
     options: ApexOptions
   }>({
