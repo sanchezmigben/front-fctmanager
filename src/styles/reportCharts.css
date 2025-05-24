@@ -1,0 +1,54 @@
+.apexcharts-svg {
+  background: transparent !important;
+}
+
+[data-bs-theme='dark'] .apexcharts-text,
+[data-bs-theme='dark'] .apexcharts-yaxis-label,
+[data-bs-theme='dark'] .apexcharts-xaxis-label,
+[data-bs-theme='dark'] .apexcharts-legend-text {
+  fill: #8a94a8 !important;
+  color: #8a94a8 !important;
+}
+
+[data-bs-theme='dark'] .apexcharts-gridline {
+  stroke: rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-bs-theme='dark'] .apexcharts-xaxis-tick,
+[data-bs-theme='dark'] .apexcharts-yaxis-tick {
+  stroke: rgba(255, 255, 255, 0.1) !important;
+}
+
+.apexcharts-tooltip {
+  background: #ffffff !important;
+  border: 1px solid #e4e6ef !important;
+  color: #3f4254 !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.apexcharts-tooltip-title {
+  background: #f8f9fa !important;
+  color: #3f4254 !important;
+  border-bottom: 1px solid #e4e6ef !important;
+  font-weight: 600 !important;
+}
+
+[data-bs-theme='dark'] .apexcharts-tooltip {
+  background: #2a3042 !important;
+  border: 1px solid #3a4055 !important;
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme='dark'] .apexcharts-tooltip-title {
+  background: #3a4055 !important;
+  color: #f8f9fa !important;
+  border-bottom: 1px solid #3a4055 !important;
+}
+
+.apexcharts-line {
+  stroke-width: 2.5px !important;
+}
+
+[data-bs-theme='dark'] .apexcharts-line {
+  stroke-width: 2.5px !important;
+}

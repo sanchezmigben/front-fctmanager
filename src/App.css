@@ -1,22 +1,86 @@
+/* Fuente Nunito de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Paleta de colores de modo claro */
 :root {
   scroll-behavior: smooth;
   --primary: #4154f1;
   --second: #717ff5;
   --bgcolor: #f6f9ff;
+  --text-color: #444;
+  --card-bg: #ffffff;
+  --header-bg: #ffffff;
+  --sidebar-bg: #ffffff;
 }
 
+/* Paleta de colores de modo oscuro */
+[data-bs-theme='dark'] {
+  --bgcolor: #1a1e2e;
+  --text-color: #f8f9fa;
+  --card-bg: #2a3042;
+  --header-bg: #2a3042;
+  --sidebar-bg: #2a3042;
+  --bs-body-color: #f8f9fa;
+  --bs-body-bg: #1a1e2e;
+  --bs-border-color: #3a4055;
+  --bs-light: #2a3042;
+  --bs-dark: #f8f9fa;
+  --bs-gray-100: #2a3042;
+  --bs-gray-200: #3a4055;
+  --bs-gray-300: #4a4f61;
+  --bs-gray-900: #f8f9fa;
+  --bs-light: #2a3042;
+  --bs-dark: #f8f9fa;
+}
+
+/* Reseteo de estilos generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos generales */
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #444;
+  color: var(--text-color);
   background: var(--bgcolor);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para tarjetas en modo oscuro */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--bs-border-color);
+}
+
+/* Estilos para la barra de navegación */
+.header {
+  background-color: var(--header-bg) !important;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+  background-color: var(--sidebar-bg) !important;
+}
+
+/* Estilos para la tabla en modo claro */
+.table {
+  --bs-table-color: var(--text-color);
+  --bs-table-bg: transparent;
+  --bs-table-striped-color: var(--text-color);
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: var(--text-color);
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: var(--text-color);
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+}
+
+/* Estilos para la tabla en modo oscuro */
+[data-bs-theme='dark'] .table {
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.05);
+  --bs-table-active-bg: rgba(255, 255, 255, 0.1);
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.075);
 }
 
 a {
@@ -26,10 +90,12 @@ a {
   transition: all 0.3s ease;
 }
 
+/* Estilos para los enlaces al pasar el ratón por encima */
 a:hover {
   color: var(--second);
 }
 
+/* Estilos para los titulos de los elementos de la interfaz */
 h1,
 h2,
 h3,
@@ -114,6 +180,61 @@ h6 {
     -o-transform: rotate(45deg);
     border-top: 1px solid #eaedf1;
     border-left: 1px solid #eaedf1;
+    z-index: 1001;
+  }
+
+  /* Estilos para la flechita de los menús desplegables en modo oscuro */
+  [data-bs-theme='dark'] .dropdown-menu-arrow::before {
+    background: var(--bs-body-bg);
+    border-top: 1px solid var(--bs-border-color);
+    border-left: 1px solid var(--bs-border-color);
+  }
+
+  /* Estilos para el menú de filtro del dashboard */
+  .dashboard .filter {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+
+  .dashboard .filter .icon {
+    color: #aab7cf;
+    padding: 0 5px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  .dashboard .filter .icon:hover,
+  .dashboard .filter .icon:focus {
+    color: #4154f1;
+  }
+
+  /* Estilos para el menú desplegable en modo oscuro */
+  [data-bs-theme='dark'] .dashboard .filter .icon {
+    color: #8a94a8;
+  }
+
+  [data-bs-theme='dark'] .dashboard .filter .icon:hover,
+  [data-bs-theme='dark'] .dashboard .filter .icon:focus {
+    color: #6c7df5;
+  }
+
+  [data-bs-theme='dark'] .dashboard .dropdown-menu {
+    background-color: #2a3042;
+    border: 1px solid #3a4055;
+  }
+
+  [data-bs-theme='dark'] .dashboard .dropdown-item {
+    color: #e9ecef;
+  }
+
+  [data-bs-theme='dark'] .dashboard .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f8f9fa;
+  }
+
+  [data-bs-theme='dark'] .dashboard .dropdown-header h6 {
+    color: #f8f9fa;
   }
 }
 
@@ -145,6 +266,7 @@ h6 {
   }
 }
 
+/* Estilos generales para las tarjetas en modos claro y oscuro */
 .card {
   margin-bottom: 30px;
   border: none;
@@ -171,12 +293,22 @@ h6 {
   color: #012970;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .card-title {
+  color: #ffffff;
 }
 
 .card-title span {
   color: #899bbd;
   font-size: 14px;
   font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .card-title span {
+  color: #8a94a8;
 }
 
 .card-body {

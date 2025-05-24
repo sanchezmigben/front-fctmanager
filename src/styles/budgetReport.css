@@ -1,0 +1,33 @@
+[data-bs-theme='dark'] .card-title {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+[data-bs-theme='dark'] .card-title > span {
+  color: #e0e0e0;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+[data-bs-theme='dark'] .card {
+  background-color: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-bs-theme='dark'] .card-body {
+  color: #f0f0f0;
+}
+
+[data-bs-theme='dark'] .recharts-legend-item-text {
+  color: #f8f9fa !important;
+  font-weight: 400;
+}
+
+[data-bs-theme='dark'] .apexcharts-legend-text {
+  fill: #8a94a8 !important;
+  color: #8a94a8 !important;
+}
+
+[data-bs-theme='dark'] .recharts-legend-item-symbol {
+  opacity: 0.9;
+}

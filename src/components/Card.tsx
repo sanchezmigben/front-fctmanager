@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './card.css'
 import CardFilter from './CardFilter'
+import '@styles/card.css'
 
 interface Card {
   _id: number

@@ -1,0 +1,296 @@
+.header-nav ul {
+  list-style: none;
+}
+
+.header-nav > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav .nav-icon {
+  font-size: 22px;
+  color: #012970;
+  margin-right: 25px;
+  position: relative;
+}
+
+[data-bs-theme='dark'] .header-nav .nav-icon-toggle {
+  color: #fff;
+}
+
+.header-nav .nav-profile {
+  color: #012970;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .nav-profile {
+  color: #f8f9fa;
+}
+
+.header-nav .nav-profile img {
+  max-height: 36px;
+}
+
+.header-nav .badge-number {
+  position: absolute;
+  inset: -2px -5px auto auto;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 6px;
+}
+
+.header-nav .notifications {
+  inset: 8px -15px auto auto !important;
+}
+
+.header-nav .notifications .notification-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.header-nav .notifications .dropdown-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-nav .notifications .dropdown-menu-arrow::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+[data-bs-theme='dark'] .header-nav .notifications .dropdown-menu-arrow::before {
+  border-bottom-color: #2a3042;
+}
+
+[data-bs-theme='dark'] .header-nav .notifications .dropdown-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-nav .notifications .dropdown-footer a {
+  color: #4154f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .notifications .dropdown-footer a {
+  color: #6c7df5;
+}
+
+.header-nav .notifications .dropdown-footer a:hover {
+  color: #2c3fd9;
+}
+
+[data-bs-theme='dark'] .header-nav .notifications .dropdown-footer a:hover {
+  color: #8e9ef8;
+}
+
+.header-nav .notifications .notification-item i {
+  margin: 0 20px 0 10px;
+  font-size: 24px;
+}
+
+.header-nav .notifications .notification-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .notifications .notification-item h4 {
+  color: #f8f9fa;
+}
+
+.header-nav .notifications .notification-item p {
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #919191;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .notifications .notification-item p {
+  color: #b1b1b1;
+}
+
+.header-nav .notifications .notification-item:hover {
+  background-color: #f6f9ff;
+}
+
+[data-bs-theme='dark'] .header-nav .notifications .notification-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-nav .messages {
+  inset: 8px -15px auto auto !important;
+}
+
+.header-nav .messages .message-item {
+  padding: 15px 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.header-nav .messages .message-item a {
+  display: flex;
+}
+
+.header-nav .messages .message-item img {
+  margin: 0 20px 0 10px;
+  max-height: 40px;
+}
+
+.header-nav .messages .message-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .messages .message-item h4 {
+  color: #f8f9fa;
+}
+
+.header-nav .messages .message-item p {
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #919191;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .messages .message-item p {
+  color: #b1b1b1;
+}
+
+.header-nav .messages .message-item:hover {
+  background-color: #f6f9ff;
+}
+
+[data-bs-theme='dark'] .header-nav .messages .message-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para el footer de los mensajes */
+.header-nav .messages .dropdown-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme='dark'] .header-nav .messages .dropdown-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-nav .messages .dropdown-footer a {
+  color: #4154f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .messages .dropdown-footer a {
+  color: #6c7df5;
+}
+
+.header-nav .messages .dropdown-footer a:hover {
+  color: #2c3fd9;
+}
+
+[data-bs-theme='dark'] .header-nav .messages .dropdown-footer a:hover {
+  color: #8e9ef8;
+}
+
+.header-nav .profile {
+  min-width: 240px;
+  padding-bottom: 0;
+  top: 8px !important;
+}
+
+.header-nav .profile .dropdown-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav .profile .dropdown-header h6 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .profile .dropdown-header h6 {
+  color: #f8f9fa;
+}
+
+.header-nav .profile .dropdown-header span {
+  font-size: 14px;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .profile .dropdown-header span {
+  color: #b1b1b1;
+}
+
+.header-nav .profile .dropdown-item {
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  color: #444;
+}
+
+[data-bs-theme='dark'] .header-nav .profile .dropdown-item {
+  color: #f8f9fa;
+}
+
+.header-nav .profile .dropdown-item i {
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 0;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .header-nav .profile .dropdown-item i {
+  color: #b1b1b1;
+}
+
+.header-nav .profile .dropdown-item:hover {
+  background-color: #f6f9ff;
+  color: #012970;
+}
+
+[data-bs-theme='dark'] .header-nav .profile .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f8f9fa;
+}
+
+[data-bs-theme='dark'] .header-nav .profile .dropdown-item:hover i {
+  color: #f8f9fa;
+}

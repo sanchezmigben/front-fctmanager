@@ -7,4 +7,9 @@
   margin-bottom: 0;
   font-weight: 600;
   color: #012970;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme="dark"] .pagetitle h1 {
+  color: #f8f9fa;
 }

@@ -1,6 +1,6 @@
 import navList, { type INavItem } from '../data/navItem'
 import NavItem from './NavItem'
-import './sideBar.css'
+import '@styles/sideBar.css'
 
 function SideBar() {
   return (

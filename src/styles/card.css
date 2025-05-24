@@ -1,0 +1,64 @@
+.dashboard .info-card {
+  padding-bottom: 10px;
+}
+
+.dashboard .info-card h6 {
+  font-size: 28px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.dashboard .info-card h5.card-title {
+  color: #41528b;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .dashboard .info-card h5,
+[data-bs-theme='dark'] .dashboard .info-card h6 {
+  color: #f8f9fa;
+}
+
+.dashboard .card-icon {
+  font-size: 32px;
+  line-height: 0;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.dashboard .sales-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
+  transition: all 0.3s ease;
+}
+
+[data-bs-theme='dark'] .dashboard .sales-card .card-icon {
+  background: rgba(65, 84, 241, 0.2);
+}
+
+.dashboard .revenue-card .card-icon {
+  color: #2eca6a;
+  background: #e0f8e9;
+  transition: all 0.3s ease;
+}
+
+[data-bs-theme='dark'] .dashboard .revenue-card .card-icon {
+  background: rgba(46, 202, 106, 0.2);
+}
+
+.dashboard .customers-card .card-icon {
+  color: #ff771d;
+  background: #ffecdf;
+  transition: all 0.3s ease;
+}
+
+[data-bs-theme='dark'] .dashboard .customers-card .card-icon {
+  background: rgba(255, 119, 29, 0.2);
+}

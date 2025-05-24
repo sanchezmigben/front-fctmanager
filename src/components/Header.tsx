@@ -1,7 +1,7 @@
-import './header.css'
 import Logo from './Logo'
 import Nav from './Nav'
 import SearchBar from './SearchBar'
+import '@styles/header.css'
 
 const Header = () => {
   return (

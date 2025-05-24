@@ -3,7 +3,11 @@ function NavNotice() {
 
   return (
     <li className='nav-item dropdown'>
-      <a href='#' className='nav-link nav-icon' data-bs-toggle='dropdown'>
+      <a
+        href='#'
+        className='nav-link nav-icon nav-icon-toggle'
+        data-bs-toggle='dropdown'
+      >
         <i className='bi bi-bell'></i>
         <span className='badge bg-primary badge-number'>{notifications}</span>
       </a>

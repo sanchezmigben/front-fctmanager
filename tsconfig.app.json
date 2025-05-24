@@ -23,5 +23,10 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
+  /* Paths de rutas relativas */
+  "baseUrl": "./src",
+  "paths": {
+    "@styles/*": ["styles/*"]
+  },
   "include": ["src"]
 }

@@ -1,0 +1,37 @@
+.logo {
+  line-height: 1;
+}
+
+@media (min-widt: 1200px) {
+  .logo {
+    width: 280px;
+  }
+}
+
+.logo img {
+  max-width: 26px;
+  margin-right: 6px;
+}
+
+.logo span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #012970;
+  font-family: 'Nunito', sans-serif;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme="dark"] .logo span {
+  color: #f8f9fa;
+}
+
+.toggle-sidebar-btn {
+  font-size: 24px;
+  color: #012970;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+[data-bs-theme="dark"] .toggle-sidebar-btn {
+  color: #f8f9fa;
+}

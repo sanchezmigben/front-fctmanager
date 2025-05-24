@@ -1,4 +1,4 @@
-import './pageTitle.css'
+import '@styles/pageTitle.css'
 
 interface Props {
   page: string

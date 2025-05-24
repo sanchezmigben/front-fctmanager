@@ -1,4 +1,4 @@
-import './logo.css'
+import '@styles/logo.css'
 
 function Logo() {
   const handleToggleSidebar = () => {
@@ -8,6 +8,7 @@ function Logo() {
   return (
     <div className='d-flex align-items-center justify-content-between'>
       <a href='/' className='logo d-flex align-items-center'>
+        {/* Elemento img comentado por posible inclusión del logo del proyecto */}
         {/* <img src="" alt="" /> */}
         <span className='d-none d-lg-block'>AdminDashboard</span>
       </a>

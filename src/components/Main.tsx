@@ -1,6 +1,6 @@
 import Dashboard from './Dashboard'
-import './main.css'
 import PageTitle from './PageTitle'
+import '@styles/main.css'
 
 function Main() {
   return (

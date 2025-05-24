@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import CardFilter from './CardFilter'
 import TopSellingItem from './TopSellingItem'
 import topSellingsData from '../api/topSellings.json'
-import './topSelling.css'
+import '@styles/topSelling.css'
 
 interface ITopSellingItem {
   _id: number

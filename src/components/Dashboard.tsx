@@ -1,4 +1,3 @@
-import './dashboard.css'
 import Reports from './Reports'
 import RecentSales from './RecentSales'
 import TopSelling from './TopSelling'
@@ -7,6 +6,7 @@ import BudgetReport from './BudgetReport'
 import WebTraffic from './WebTraffic'
 import News from './News'
 import Cards from './Cards'
+import '@styles/dashboard.css'
 
 function Dashboard() {
   return (

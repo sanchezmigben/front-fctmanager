@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import CardFilter from './CardFilter'
 import BudgetChart from './BudgetChart'
+import '@styles/budgetReport.css'
 
 function BudgetReport() {
   const [filter, setFilter] = useState('Today')

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import CardFilter from './CardFilter'
 import RecentActivityItem from './RecentActivityItem'
 import recentActivitiesData from '../api/recentActivities.json'
-import './recentActivity.css'
+import '@styles/recentActivity.css'
 
 interface IRecentActivityItem {
   _id: number

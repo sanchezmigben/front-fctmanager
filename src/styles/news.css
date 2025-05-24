@@ -20,7 +20,7 @@
 }
 
 .dashboard .news h4 a {
-  color: #012970;
+  color: var(--bs-primary);
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -34,6 +34,10 @@
 
 .dashboard .news p {
   font-size: 14px;
-  color: #777;
+  color: var(--bs-gray-700);
   margin-left: 95px;
+}
+
+[data-bs-theme="dark"] .dashboard .news p {
+  color: var(--bs-gray-400);
 }

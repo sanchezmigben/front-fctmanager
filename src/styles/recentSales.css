@@ -1,0 +1,47 @@
+.dashboard .recent-sales {
+  font-size: 14px;
+}
+
+.dashboard .recent-sales .table thead {
+  background: #f6f6fe !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-bs-theme='dark'] .dashboard .recent-sales .table thead tr th,
+[data-bs-theme='dark'] .dashboard .recent-sales .table tbody tr {
+  background-color: var(--card-bg) !important;
+}
+
+[data-bs-theme='dark']
+  .dashboard
+  .recent-sales
+  .table
+  tbody
+  tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-bs-theme='dark'] .dashboard .recent-sales .table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.075) !important;
+}
+
+.dashboard .recent-sales .table thead th {
+  border: 0;
+  color: #3b4164;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+[data-bs-theme='dark'] .dashboard .recent-sales .table thead th {
+  color: #e9ecef;
+}
+
+.dashboard .recent-sales .dataTable-top {
+  padding: 0 0 10px 0;
+}
+
+.dashboard .recent-sales .dataTable-bottom {
+  padding: 10px 0 0 0;
+}

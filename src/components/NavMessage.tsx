@@ -3,7 +3,11 @@ function NavMessage() {
 
   return (
     <li className='nav-item dropdown'>
-      <a href='#' className='nav-link nav-icon' data-bs-toggle='dropdown'>
+      <a
+        href='#'
+        className='nav-link nav-icon nav-icon-toggle'
+        data-bs-toggle='dropdown'
+      >
         <i className='bi bi-chat-left-text'></i>
         <span className='badge bg-success badge-number'>{messages}</span>
       </a>

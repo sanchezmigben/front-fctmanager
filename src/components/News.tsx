@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import CardFilter from './CardFilter'
 import NewsPostItem from './NewsPostItem'
 import newsData from '../api/news.json'
-import './news.css'
+import '@styles/news.css'
 
 interface INews {
   _id: number
