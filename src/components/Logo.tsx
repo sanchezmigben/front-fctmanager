@@ -10,7 +10,7 @@ function Logo() {
       <a href='/' className='logo d-flex align-items-center'>
         {/* Elemento img comentado por posible inclusión del logo del proyecto */}
         {/* <img src="" alt="" /> */}
-        <span className='d-none d-lg-block'>AdminDashboardLogo</span>
+        <span className='d-none d-lg-block'>AdminDashboardLogo2</span>
       </a>
       <i
         className='bi bi-list toggle-sidebar-btn'
