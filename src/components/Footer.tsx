@@ -6,7 +6,7 @@ function Footer() {
       <div className='copyright'>
         &copy; Copyright{' '}
         <strong>
-          <span>Jerogassan</span>
+          <span>Migben</span>
         </strong>
         . All Rights Reserved
       </div>
