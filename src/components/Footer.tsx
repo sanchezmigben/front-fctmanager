@@ -8,7 +8,7 @@ function Footer() {
         <strong>
           <span>Migben</span>
         </strong>
-        . All Rights Reserveddddddd
+        . All Rights Reservedddddddasdfasdf
       </div>
 
       {/* Créditos adicionales a DStudio */}
